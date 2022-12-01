@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 
-export const Header = styled.header`
+export const Container = styled.header`
     height: 112px;
     background-color: #333333;
     display: flex;

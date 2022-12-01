@@ -1,21 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import { Header, RowParent, RowChild, LinkText } from './css/Header';
+import HeaderBanner from './components/Header/Header';
+import Profile from './components/Profile/Profile';
 
 function App() {
   return (
     <div className="App">
-      <Header>
-        <RowParent>
-          <LinkText>Celine Zhou</LinkText>
-          <RowChild>
-              <LinkText id="profile">Profile</LinkText>
-              <LinkText id="unreal">Unreal</LinkText>
-              <LinkText id="unity">Unity</LinkText>
-              <LinkText id="contacts">Contacts</LinkText>
-          </RowChild>
-        </RowParent>
-      </Header>
+      <HeaderBanner/>
+      <div className='BodyContainer'>
+        <Profile />
+      </div>
     </div>
   );
 }
