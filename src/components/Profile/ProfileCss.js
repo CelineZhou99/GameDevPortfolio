@@ -9,7 +9,8 @@ export const Container = styled.div`
     height: 450px;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: 5px;
+    margin-bottom: 50px;
     color: #531403;
     font-size: 20pt;
     font-family: PixelRegular;
