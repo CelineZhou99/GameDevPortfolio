@@ -7,6 +7,8 @@ export const Container = styled.header`
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 8px 8px -4px #ff4fb9;
+    position: fixed;
+    width: 100%;
 `;
 
 export const RowParent = styled.div`
@@ -25,7 +27,7 @@ export const LinkText = styled.a`
     margin-left: 20px;
     margin-right: 20px;
     font-family: PixelRegular;
-    cursor: pointer;
+    cursor: ${props => props.notLink ? 'Default' : 'Pointer'}
     transition: color .3s ease-in-out;
 
     &:hover {

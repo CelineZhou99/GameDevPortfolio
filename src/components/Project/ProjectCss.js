@@ -7,7 +7,7 @@ export const Container = styled.div`
     width: 85%;
     color: white;
     text-align: left;
-    margin-bottom: 80px;
+    margin-bottom: 150px;
     font-family: "PixelBold";
 `;
 
@@ -43,14 +43,14 @@ export const BodyText = styled.p`
 export const DescriptionContainer = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 40%;
 `;
 
 export const Number = styled.h3`
     font-size: 58pt;
-    margin: 20px;
+    margin: 30px;
     align-self: center;
 `
 export const GitLink = styled.a`

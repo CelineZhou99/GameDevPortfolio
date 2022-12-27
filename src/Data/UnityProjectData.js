@@ -5,7 +5,7 @@ const PlatformDemo = "https://www.youtube.com/embed/yyqeJFFex2A"
 
 export const UnityProjects = [
 	{
-		isFlipped: false,
+		isFlipped: true,
 		vidSrc: DungeonDemo, 
 		title: "DunDunDungeon", 
 		gitLink: "https://github.com/CelineZhou99/DunDunDungeon", 
@@ -14,7 +14,7 @@ export const UnityProjects = [
 		number: "01"
 	},
 	{
-		isFlipped: true,
+		isFlipped: false,
 		vidSrc: PlatformDemo, 
 		title: "SunnyLand", 
 		gitLink: "https://github.com/CelineZhou99/SunnyLand", 

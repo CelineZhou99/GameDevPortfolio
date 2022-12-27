@@ -1,19 +1,19 @@
-import { Container, RowParent, RowChild, LinkText } from './HeaderCss';
+import { Container, RowParent, RowChild, LinkText } from "./HeaderCss";
 
 function Header() {
-  return (
-    <Container>
-		<RowParent>
-			<LinkText>Celine Zhou</LinkText>
-			<RowChild>
-				<LinkText id="profile">Profile</LinkText>
-				<LinkText id="unreal">Unreal</LinkText>
-				<LinkText id="unity">Unity</LinkText>
-				<LinkText id="contacts">Contacts</LinkText>
-			</RowChild>
-		</RowParent>
-    </Container>
-  );
+	return (
+		<Container>
+			<RowParent>
+				<LinkText notLink>Celine Zhou</LinkText>
+				<RowChild>
+					<LinkText href="#Profile_ID">Profile</LinkText>
+					<LinkText href="#Unreal_ID">Unreal</LinkText>
+					<LinkText href="#Unity_ID">Unity</LinkText>
+					<LinkText href="#Contacts_ID">Contacts</LinkText>
+				</RowChild>
+			</RowParent>
+		</Container>
+	);
 }
 
 export default Header;

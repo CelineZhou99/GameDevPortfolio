@@ -6,7 +6,7 @@ export const Container = styled.div`
     border: solid 10px #B8620E;
     border-radius: 10px;
     width: 85%;
-    height: 450px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     margin-top: 5px;
@@ -22,12 +22,11 @@ export const PictureContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25%;
+    width: 20%;
 `;
 
 export const Picture = styled.img`
-    width: 50%;
-    height: 60%;
+    width: 65%;
     border: solid 10px #B8620E;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -39,6 +38,7 @@ export const NameTag = styled.div`
     background-color: #FED283;
     text-align: center;
     padding: 10px;
+    width: 65%;
 `;
 
 // middle container
@@ -55,11 +55,18 @@ export const StatsContainer = styled.div`
 
 export const StatsItemsContainer = styled.div`
     display: flex;
+    align-items: center;
     text-align: left;
 `;
 
 export const StatsLevel = styled.img`
     width: 30%;
+    margin-left: 10px;
+`;
+
+export const Fire = styled.img`
+    width: 5%;
+    height: 50%;
     margin-left: 10px;
 `;
 

@@ -3,6 +3,10 @@
   background-color: #333333;
 }
 
+.FillerBox {
+  height: 112px;
+}
+
 .BodyContainer {
   display: flex;
   flex-direction: column;
@@ -18,6 +22,15 @@
   margin-top: 50px;
   margin-bottom: 50px;
   text-align: left;
+  transition: color .3s ease-in-out;
+}
+
+.Heading:hover {
+  color: #ff4fb9;
+}
+
+.HeadingLink {
+  width: 85%;
 }
 
 @font-face {
