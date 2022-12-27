@@ -16,7 +16,7 @@ function Profile() {
 	return (
 		<Container>
 			<PictureContainer>
-				<Picture src="./selfie.png" alt="profile picture" />
+				<Picture src="./Selfie.png" alt="profile picture" />
 				<NameTag>Celine Zhou</NameTag>
 			</PictureContainer>
 			<StatsContainer>
