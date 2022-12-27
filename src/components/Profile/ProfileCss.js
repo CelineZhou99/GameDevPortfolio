@@ -6,14 +6,21 @@ export const Container = styled.div`
     border: solid 10px #B8620E;
     border-radius: 10px;
     width: 85%;
-    height: 500px;
     display: flex;
     justify-content: space-evenly;
+    padding: 20px;
     margin-top: 5px;
     margin-bottom: 50px;
     color: #531403;
     font-size: 20pt;
     font-family: PixelRegular;
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+        font-size: 25pt;
+        width: 80%
+    }
 `;
 
 // left container
@@ -22,7 +29,11 @@ export const PictureContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 25%;
+
+    @media (max-width: 1000px) {
+        width: 80%;
+    }
 `;
 
 export const Picture = styled.img`
@@ -38,7 +49,7 @@ export const NameTag = styled.div`
     background-color: #FED283;
     text-align: center;
     padding: 10px;
-    width: 65%;
+    width: 60%;
 `;
 
 // middle container
@@ -50,7 +61,18 @@ export const StatsContainer = styled.div`
     border-left: solid 3px #C29878;
     border-right: solid 3px #C29878;
     padding-left: 2%;
-    width: 35%;
+    width: 45%;
+
+    @media (max-width: 1000px) {
+        width: 95%;
+        border-left: none;
+        border-right: none;
+        border-top: solid 3px #C29878;
+        border-bottom: solid 3px #C29878;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        padding: 5%;
+    }
 `;
 
 export const StatsItemsContainer = styled.div`
@@ -64,12 +86,6 @@ export const StatsLevel = styled.img`
     margin-left: 10px;
 `;
 
-export const Fire = styled.img`
-    width: 5%;
-    height: 50%;
-    margin-left: 10px;
-`;
-
 // right container
 export const HobbiesContainer = styled.div`
     display: flex;
@@ -77,6 +93,11 @@ export const HobbiesContainer = styled.div`
     justify-content: space-evenly;
     align-items: center;
     padding-left: 1%;
+    width: 30%;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
 `;
 
 export const HobbiesItemsContainer = styled.div`
@@ -89,4 +110,8 @@ export const HobbiesItemsContainer = styled.div`
 export const HobbiesItem = styled.img`
     margin: 10px; 
     width: 30%;
+
+     @media (max-width: 1000px) {
+        width: 20%;
+    }
 `;

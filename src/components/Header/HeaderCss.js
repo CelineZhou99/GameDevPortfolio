@@ -9,6 +9,7 @@ export const Container = styled.header`
     box-shadow: 0 8px 8px -4px #ff4fb9;
     position: fixed;
     width: 100%;
+    z-index: 2;
 `;
 
 export const RowParent = styled.div`

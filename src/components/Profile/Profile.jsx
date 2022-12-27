@@ -8,7 +8,6 @@ import {
 	NameTag,
 	StatsItemsContainer,
 	StatsLevel,
-	Fire,
 	HobbiesItem,
 } from "./ProfileCss";
 
@@ -36,7 +35,6 @@ function Profile() {
 				</StatsItemsContainer>
 				<StatsItemsContainer>
 					<p>Status: Looking for Work</p>
-					<Fire src="./Fire.png" alt="fire" />
 				</StatsItemsContainer>
 			</StatsContainer>
 			<HobbiesContainer>

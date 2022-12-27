@@ -9,29 +9,47 @@ export const Container = styled.div`
     text-align: left;
     margin-bottom: 150px;
     font-family: "PixelBold";
+
+    @media (max-width: 1000px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 // container containing the gif and description
 export const VideoContainer = styled.div`
-    display: flex;
-    justify-content: ${props => props.flexSide ?? props.flexSide}
-    width: 60%;
-    height: 100%;
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 400px;
+    z-index: 1;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
 `;
 
 export const Iframe = styled.iframe`
-    width: 900px;
-    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 `
 
 export const TitleContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 `;
 
 export const TitleText = styled.h2`
     font-size: 24pt;
+
+    @media (max-width: 1000px) {
+        font-size: 20pt;
+    }
 `;
 
 export const BodyText = styled.p`
@@ -46,12 +64,23 @@ export const DescriptionContainer = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     width: 40%;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+    }
 `;
 
 export const Number = styled.h3`
     font-size: 58pt;
-    margin: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     align-self: center;
+
+    @media (max-width: 1000px) {
+        font-size: 40pt;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
 `
 export const GitLink = styled.a`
     display: flex;
