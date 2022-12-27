@@ -27,8 +27,8 @@ export const LinkText = styled.a`
     color: white;
     margin-left: 20px;
     margin-right: 20px;
-    font-family: PixelRegular;
-    cursor: ${props => props.notLink ? 'Default' : 'Pointer'}
+    font-family: ${props => props.notLink ? 'PixelBold' : 'PixelRegular'};
+    cursor: ${props => props.notLink ? 'Default' : 'Pointer'};
     transition: color .3s ease-in-out;
 
     &:hover {

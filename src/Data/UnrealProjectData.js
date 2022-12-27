@@ -4,6 +4,8 @@ const FPSDemo = "https://www.youtube.com/embed/Ca3wOfvwKpA";
 const TankDemo = "https://www.youtube.com/embed/bl45NCqkt3U"
 const DungeonDemo = "https://www.youtube.com/embed/w6QSgaJhm4g"
 
+const FPSDescription = "A Sci-Fi themed third person shooter game. PC and Controller supported."
+
 export const UnrealProjects = [
 	{
 		isFlipped: false,
