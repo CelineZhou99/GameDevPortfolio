@@ -25,7 +25,7 @@ const Project = (props) => {
 						<TitleContainer>
 							<TitleText>{title}</TitleText>
 							<GitLink href={gitLink} target="_blank" rel="noreferrer">
-								<GitIcon src="./github.png" alt="github icon" />
+								<GitIcon src="./Github.png" alt="github icon" />
 							</GitLink>
 						</TitleContainer>
 						<BodyText>{engine}</BodyText>
@@ -40,7 +40,7 @@ const Project = (props) => {
 						<TitleContainer>
 							<TitleText>{title}</TitleText>
 							<GitLink href={gitLink} target="_blank" rel="noreferrer">
-								<GitIcon src="./github.png" alt="github icon" />
+								<GitIcon src="./Github.png" alt="github icon" />
 							</GitLink>
 						</TitleContainer>
 						<BodyText>{engine}</BodyText>

@@ -27,6 +27,7 @@
 
 .Heading:hover {
   color: #ff4fb9;
+  cursor: default;
 }
 
 .HeadingLink {

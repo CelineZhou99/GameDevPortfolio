@@ -5,7 +5,7 @@ export const Container = styled.div`
     background-color: #FFC79C;
     border: solid 10px #B8620E;
     border-radius: 10px;
-    width: 85%;
+    width: 83%;
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
