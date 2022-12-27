@@ -14,14 +14,20 @@ export const Container = styled.div`
 // container containing the gif and description
 export const VideoContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: ${props => props.flexSide ?? props.flexSide}
     width: 60%;
+    height: 100%;
 `;
+
+export const Iframe = styled.iframe`
+    width: 900px;
+    height: 500px;
+`
 
 export const TitleContainer = styled.div`
     display: flex;
     justify-content: space-between;
+    width: 100%;
 `;
 
 export const TitleText = styled.h2`
@@ -33,14 +39,27 @@ export const BodyText = styled.p`
     font-family: "PixelRegular";
 `;
 
-// container containing the serial number of project
-export const NumberContainer = styled.div`
+// container containing the description of project
+export const DescriptionContainer = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 40%;
 `;
 
 export const Number = styled.h3`
-    font-size: 64pt;
+    font-size: 58pt;
+    margin: 20px;
+    align-self: center;
+`
+export const GitLink = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+`;
+
+export const GitIcon = styled.img`
+    height: 80px;
 `

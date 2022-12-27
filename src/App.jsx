@@ -1,28 +1,27 @@
-import './App.css';
-import HeaderBanner from './components/Header/Header';
-import Profile from './components/Profile/Profile';
-import Project from './components/Project/Project';
+import "./App.css";
+import HeaderBanner from "./components/Header/Header";
+import Profile from "./components/Profile/Profile";
+import Project from "./components/Project/Project";
 
-import { UnrealProjects } from './Data/UnrealProjectData';
-import { UnityProjects } from './Data/UnityProjectData';
+import { UnrealProjects } from "./data/UnrealProjectData";
+import { UnityProjects } from "./data/UnityProjectData";
 
 function App() {
 	return (
 		<div className="App">
-			<HeaderBanner/>
-			<div className='BodyContainer'>
-				<h1 className='Heading'>Player Profile</h1>
+			<HeaderBanner />
+			<div className="BodyContainer">
+				<h1 className="Heading">Player Profile</h1>
 				<Profile />
-				<h1 className='Heading'>Unreal Projects</h1>
+				<h1 className="Heading">Unreal Projects</h1>
 				{UnrealProjects.map((project) => (
 					<Project key={project.number} {...project} />
 				))}
-				<h1 className='Heading'>Unity Projects</h1>
+				<h1 className="Heading">Unity Projects</h1>
 				{UnityProjects.map((project) => (
 					<Project key={project.number} {...project} />
 				))}
-				<h1 className='Contacts'>Unity Projects</h1>
-						
+				<h1 className="Heading">Contacts</h1>
 			</div>
 		</div>
 	);

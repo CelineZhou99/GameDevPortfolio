@@ -1,51 +1,58 @@
-import { 
-	Container, 
-	VideoContainer, 
-	TitleContainer, 
-	TitleText, 
+import {
+	Container,
+	VideoContainer,
+	Iframe,
+	TitleContainer,
+	TitleText,
 	BodyText,
-	NumberContainer,
-	Number
+	DescriptionContainer,
+	Number,
+	GitLink,
+	GitIcon,
 } from "./ProjectCss";
 
-const Project = props => {
-	const {isFlipped, gifSrc, gifAlt, title, gitLink, engine, description, number} = props;
-	return (  
+const Project = (props) => {
+	const { isFlipped, vidSrc, title, gitLink, engine, description, number } = props;
+	return (
 		<Container>
-			{!isFlipped && 
+			{!isFlipped && (
 				<>
-					<VideoContainer>
-						<img src={gifSrc} alt={gifAlt} />
+					<VideoContainer flexSide="flex-start">
+						<Iframe src={vidSrc} allowFullScreen />
+					</VideoContainer>
+					<DescriptionContainer>
+						<Number>{number}</Number>
 						<TitleContainer>
 							<TitleText>{title}</TitleText>
-							<TitleText>{gitLink}</TitleText>
+							<GitLink href={gitLink} target="_blank" rel="noreferrer">
+								<GitIcon src="./github.png" alt="github icon" />
+							</GitLink>
 						</TitleContainer>
 						<BodyText>{engine}</BodyText>
 						<BodyText>{description}</BodyText>
-					</VideoContainer>
-					<NumberContainer>
-						<Number>{number}</Number>
-					</NumberContainer>
+					</DescriptionContainer>
 				</>
-			}
-			{isFlipped && 
+			)}
+			{isFlipped && (
 				<>
-					<NumberContainer>
+					<DescriptionContainer>
 						<Number>{number}</Number>
-					</NumberContainer>
-					<VideoContainer>
-						<img src={gifSrc} alt={gifAlt} />
 						<TitleContainer>
 							<TitleText>{title}</TitleText>
-							<TitleText>{gitLink}</TitleText>
+							<GitLink href={gitLink} target="_blank" rel="noreferrer">
+								<GitIcon src="./github.png" alt="github icon" />
+							</GitLink>
 						</TitleContainer>
 						<BodyText>{engine}</BodyText>
 						<BodyText>{description}</BodyText>
+					</DescriptionContainer>
+					<VideoContainer flexSide="flex-end">
+						<Iframe src={vidSrc} />
 					</VideoContainer>
 				</>
-			}
+			)}
 		</Container>
 	);
-}
+};
 
 export default Project;

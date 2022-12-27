@@ -26,8 +26,8 @@ export const PictureContainer = styled.div`
 `;
 
 export const Picture = styled.img`
-    width: 60%;
-    height: 70%;
+    width: 50%;
+    height: 60%;
     border: solid 10px #B8620E;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -59,7 +59,7 @@ export const StatsItemsContainer = styled.div`
 `;
 
 export const StatsLevel = styled.img`
-    width: 35%;
+    width: 30%;
     margin-left: 10px;
 `;
 
