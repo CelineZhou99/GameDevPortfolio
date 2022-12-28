@@ -1,7 +1,8 @@
-const SubText = "Phasellus dictum pretium ex in imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla tincidunt, nunc sed commodo molestie, quam massa dignissim dolor, quis fermentum enim elit in urna. Donec varius pretium dui eget ultrices. Nam in enim eleifend, ultricies tortor nec, tempus quam. ";
-
 const DungeonDemo = "https://www.youtube.com/embed/pJBToJ641Vw"
 const PlatformDemo = "https://www.youtube.com/embed/yyqeJFFex2A"
+
+const DungeonDescription = "You've transformed into a 2D explorer brave enough to set foot into the dungeon to look for treasure. There are many slimy enemies on your way, but at least you have great music to accompany you and characters with a great sense of humour to meet. Warning: try not to get scammed by a mysterious merchant!"
+const PlatformDescription = "The furry in you has awakened. You switched souls with a fox on a journey to collect a bunch of cherries. You've also gained the ability to jump from platform to platform. You can also somehow jump on top of frogs and eagles to make them explode. Remember that famous quote: 'Diamonds are a fox's best friend'. You are going to need it!"
 
 export const UnityProjects = [
 	{
@@ -10,7 +11,7 @@ export const UnityProjects = [
 		title: "DunDunDungeon", 
 		gitLink: "https://github.com/CelineZhou99/DunDunDungeon", 
 		engine: "Unity", 
-		description: SubText, 
+		description: DungeonDescription, 
 		number: "01"
 	},
 	{
@@ -19,7 +20,7 @@ export const UnityProjects = [
 		title: "SunnyLand", 
 		gitLink: "https://github.com/CelineZhou99/SunnyLand", 
 		engine: "Unity", 
-		description: SubText, 
+		description: PlatformDescription, 
 		number: "02"
 	}
 ];
