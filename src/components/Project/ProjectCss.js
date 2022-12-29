@@ -27,6 +27,14 @@ export const VideoContainer = styled.div`
     @media (max-width: 1000px) {
         width: 100%;
     }
+
+    @media (max-width: 600px) {
+        height: 300px;
+    }
+
+    @media (max-width: 400px) {
+        height: 200px;
+    }
 `;
 
 export const Iframe = styled.iframe`
@@ -49,6 +57,14 @@ export const TitleText = styled.h2`
 
     @media (max-width: 1000px) {
         font-size: 20pt;
+    }
+
+    @media (max-width: 800px) {
+        font-size: 19pt;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 18pt;
     }
 `;
 
@@ -81,6 +97,14 @@ export const Number = styled.h3`
         margin-top: 25px;
         margin-bottom: 15px;
     }
+
+    @media (max-width: 800px) {
+        font-size: 36pt;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 32pt;
+    }
 `
 export const GitLink = styled.a`
     display: flex;
@@ -90,5 +114,9 @@ export const GitLink = styled.a`
 `;
 
 export const GitIcon = styled.img`
-    height: 80px;
+    height: 45px;
+
+    @media (max-width: 600px) {
+        height: 40px;
+    }
 `

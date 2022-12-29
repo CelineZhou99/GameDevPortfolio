@@ -15,12 +15,24 @@ export const FooterContainer = styled.footer`
 
 export const Text = styled.h1`
     font-size: 24pt;
+
+    @media (max-width: 800px) {
+        font-size: 18pt;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 16pt;
+    }
 `;
 
 export const IconContainer = styled.div`
     width: 250px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 400px) {
+        width: 180px;
+    }
 `;
 
 export const IconLink = styled.a`

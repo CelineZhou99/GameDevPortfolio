@@ -5,7 +5,7 @@ export const Container = styled.div`
     background-color: #FFC79C;
     border: solid 10px #B8620E;
     border-radius: 10px;
-    width: 83%;
+    width: 82%;
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
@@ -18,8 +18,21 @@ export const Container = styled.div`
     @media (max-width: 1000px) {
         flex-direction: column;
         align-items: center;
-        font-size: 25pt;
+        font-size: 20pt;
         width: 80%
+    }
+
+    @media (max-width: 800px) {
+        font-size: 18pt;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 16pt;
+        width: 76%;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 14pt;
     }
 `;
 
@@ -84,6 +97,10 @@ export const StatsItemsContainer = styled.div`
 export const StatsLevel = styled.img`
     width: 30%;
     margin-left: 10px;
+
+    @media (max-width: 600px) {
+        width: 35%;
+    }
 `;
 
 // right container

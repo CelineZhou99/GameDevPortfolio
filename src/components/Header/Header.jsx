@@ -1,4 +1,4 @@
-import { Container, RowParent, RowChild, LinkText } from "./HeaderCss";
+import { Container, RowParent, RowChild, LinkText, MobileParent } from "./HeaderCss";
 
 function Header() {
 	return (
@@ -12,6 +12,9 @@ function Header() {
 					<LinkText href="#Contacts_ID">Contacts</LinkText>
 				</RowChild>
 			</RowParent>
+			<MobileParent>
+				<LinkText notLink>Celine Zhou</LinkText>
+			</MobileParent>
 		</Container>
 	);
 }

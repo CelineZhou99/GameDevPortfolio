@@ -10,11 +10,19 @@ export const Container = styled.header`
     position: fixed;
     width: 100%;
     z-index: 2;
+
+    @media (max-width: 800px) {
+        height: 90px;
+    }
 `;
 
 export const RowParent = styled.div`
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+        display: none;
+    }
 `
 
 export const RowChild = styled.div`
@@ -34,4 +42,21 @@ export const LinkText = styled.a`
     &:hover {
         color: #ff4fb9;
     }
+
+    @media (max-width: 800px) {
+        font-size: 18pt;
+    }
+
+    @media (max-width: 600px) {
+        font-size: 16pt;
+    }
 `
+
+export const MobileParent = styled.div`
+    display: none;
+
+    @media (max-width: 800px) {
+        display: flex;
+        justify-content: flex-start;
+    }
+`;

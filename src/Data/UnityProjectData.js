@@ -8,7 +8,7 @@ export const UnityProjects = [
 	{
 		isFlipped: false,
 		vidSrc: DungeonDemo, 
-		title: "DunDunDungeon", 
+		title: "DunDun Dungeon", 
 		gitLink: "https://github.com/CelineZhou99/DunDunDungeon", 
 		engine: "Unity", 
 		description: DungeonDescription, 
@@ -17,7 +17,7 @@ export const UnityProjects = [
 	{
 		isFlipped: true,
 		vidSrc: PlatformDemo, 
-		title: "SunnyLand", 
+		title: "Sunny Land", 
 		gitLink: "https://github.com/CelineZhou99/SunnyLand", 
 		engine: "Unity", 
 		description: PlatformDescription, 

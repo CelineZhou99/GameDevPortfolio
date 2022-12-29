@@ -25,6 +25,28 @@
   transition: color .3s ease-in-out;
 }
 
+@media (max-width: 1000px) {
+  .Heading {
+    font-size: 20pt;
+  }
+}
+
+@media (max-width: 800px) {
+  .Heading {
+    font-size: 18pt;
+  }
+
+  .FillerBox {
+    height: 90px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Heading {
+    font-size: 16pt;
+  }
+}
+
 .Heading:hover {
   color: #ff4fb9;
   cursor: default;
