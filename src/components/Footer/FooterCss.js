@@ -23,15 +23,23 @@ export const Text = styled.h1`
     @media (max-width: 400px) {
         font-size: 16pt;
     }
+
+    @media (max-width: 350px) {
+        font-size: 15pt;
+    }
 `;
 
 export const IconContainer = styled.div`
-    width: 250px;
+    width: 180px;
     display: flex;
     justify-content: space-between;
 
+    @media (max-width: 600px) {
+        width: 140px;
+    }
+
     @media (max-width: 400px) {
-        width: 180px;
+        width: 130px;
     }
 `;
 
@@ -43,5 +51,9 @@ export const IconLink = styled.a`
 `;
 
 export const Icon = styled.img`
-    height: 80px;
+    height: 60px;
+
+    @media (max-width: 600px) {
+        height: 50px;
+    }
 `

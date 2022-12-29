@@ -128,7 +128,15 @@ export const HobbiesItem = styled.img`
     margin: 10px; 
     width: 30%;
 
-     @media (max-width: 1000px) {
-        width: 20%;
+    @media (max-width: 1000px) {
+        width: 18%;
+    }
+
+    @media (max-width: 600px) {
+        width: 25%;
+    }
+
+    @media (max-width: 400px) {
+        width: 30%;
     }
 `;
