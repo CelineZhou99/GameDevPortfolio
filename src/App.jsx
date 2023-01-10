@@ -19,16 +19,16 @@ function App() {
 				<h1 className="Heading">Player Profile</h1>
 				<Profile />
 				<a id="Unreal_ID" className="HeadingLink">
-					<h1 className="Heading">Unreal Projects</h1>
+					<h1 className="Heading">Unreal Projects (Solo)</h1>
 				</a>
 				{UnrealProjects.map((project) => (
-					<Project key={project.number} {...project} />
+					<Project key={project.title} {...project} />
 				))}
 				<a id="Unity_ID" className="HeadingLink">
-					<h1 className="Heading">Unity Projects</h1>
+					<h1 className="Heading">Unity Projects (Solo)</h1>
 				</a>
 				{UnityProjects.map((project) => (
-					<Project key={project.number} {...project} />
+					<Project key={project.title} {...project} />
 				))}
 			</div>
 			<Footer {...Contacts} />

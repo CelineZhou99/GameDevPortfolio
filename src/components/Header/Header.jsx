@@ -9,7 +9,7 @@ function Header() {
 					<LinkText href="#Profile_ID">Profile</LinkText>
 					<LinkText href="#Unreal_ID">Unreal</LinkText>
 					<LinkText href="#Unity_ID">Unity</LinkText>
-					<LinkText href="#Contacts_ID">Contacts</LinkText>
+					<LinkText href="#Contacts_ID">Contact</LinkText>
 				</RowChild>
 			</RowParent>
 			<MobileParent>

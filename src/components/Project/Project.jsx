@@ -6,13 +6,13 @@ import {
 	TitleText,
 	BodyText,
 	DescriptionContainer,
-	Number,
 	GitLink,
 	GitIcon,
 } from "./ProjectCss";
+import ProjectAccordion from "./ProjectAccordion";
 
 const Project = (props) => {
-	const { isFlipped, vidSrc, title, gitLink, engine, description, number } = props;
+	const { isFlipped, vidSrc, title, gitLink, engine, description, technicals, challenges } = props;
 	return (
 		<Container>
 			{!isFlipped && (
@@ -21,7 +21,6 @@ const Project = (props) => {
 						<Iframe src={vidSrc} allowFullScreen />
 					</VideoContainer>
 					<DescriptionContainer>
-						<Number>{number}</Number>
 						<TitleContainer>
 							<TitleText>{title}</TitleText>
 							<GitLink href={gitLink} target="_blank" rel="noreferrer">
@@ -30,13 +29,14 @@ const Project = (props) => {
 						</TitleContainer>
 						<BodyText>{engine}</BodyText>
 						<BodyText>{description}</BodyText>
+						<ProjectAccordion id={title} title="Technical Aspects" body={{ items: technicals }} />
+						<ProjectAccordion id={title} title="Challenges Faced" body={{ items: challenges }} />
 					</DescriptionContainer>
 				</>
 			)}
 			{isFlipped && (
 				<>
 					<DescriptionContainer>
-						<Number>{number}</Number>
 						<TitleContainer>
 							<TitleText>{title}</TitleText>
 							<GitLink href={gitLink} target="_blank" rel="noreferrer">
@@ -45,6 +45,8 @@ const Project = (props) => {
 						</TitleContainer>
 						<BodyText>{engine}</BodyText>
 						<BodyText>{description}</BodyText>
+						<ProjectAccordion id={title} title="Technical Aspects" body={{ items: technicals }} />
+						<ProjectAccordion id={title} title="Challenges Faced" body={{ items: challenges }} />
 					</DescriptionContainer>
 					<VideoContainer flexSide="flex-end">
 						<Iframe src={vidSrc} />

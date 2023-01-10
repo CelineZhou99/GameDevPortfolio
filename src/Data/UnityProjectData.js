@@ -11,8 +11,24 @@ export const UnityProjects = [
 		title: "DunDun Dungeon", 
 		gitLink: "https://github.com/CelineZhou99/DunDunDungeon", 
 		engine: "Unity", 
-		description: DungeonDescription, 
-		number: "01"
+		description: DungeonDescription,
+		technicals: [
+			"Menu options including music volume",
+			"Character movement, attacking, collecting coins", 
+			"Camera movement",
+			"Level design and building using the tilemap system",
+			"Interactable friendly NPCs that walk within their boundaries, talks to player when interacted with", 
+			"Enemy AI will roam around the level in a random direction, damage players when in coming in contact with them, become stronger as the game progresses, have a chance of dropping a coin upon death",
+			"Animations using blend tree and state machine",
+			"Damage, health, level up system", 
+			"HUD display for player health, player level, coins collected",
+			"When player dies, a lose screen UI is shown with options to restart or quit",
+			"8 bit background music and sound effects for the perfect immersion",
+			"And finally, a great sense of humour"
+		],
+		challenges: [
+			"I was stuck on a bug for a few hours and couldn't figure out the solution. Turns out I was looking at the wrong place the entire time. The bug was not in the code it was within the engine itself. From this experience, I learnt to always check both the code and the engine settings when debugging."
+		]
 	},
 	{
 		isFlipped: true,
@@ -20,8 +36,22 @@ export const UnityProjects = [
 		title: "Sunny Land", 
 		gitLink: "https://github.com/CelineZhou99/SunnyLand", 
 		engine: "Unity", 
-		description: PlatformDescription, 
-		number: "02"
+		description: PlatformDescription,
+		technicals: [
+			"Character movement, collecting cherries (currency)",
+			"Camera movement",
+			"Level design and building using the tilemap system",
+			"Player dies when they fall out of the map, the level resets when the player dies",
+			"Both stationary and moving enemies damage players when coming in contact with them, die when jumped on by player",
+			"Animations using blend tree and state machine",
+			"Damage and health system",
+			"HUD display for player health, cherries collected",
+			"Level complete screen UI is shown in between levels",
+			"Sound effects for walking, jumping, attacking, getting hurt, completing levels"
+		],
+		challenges: [
+			"This was my first ever game project! It took me a long time to learn the ins and outs of Unity and how to make a game. I took my time, revisited many concepts to ensure I understood them, and ended up having so much fun while doing so."
+		]
 	}
 ];
 

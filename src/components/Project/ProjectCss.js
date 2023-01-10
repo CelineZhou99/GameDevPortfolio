@@ -86,26 +86,6 @@ export const DescriptionContainer = styled.div`
     }
 `;
 
-export const Number = styled.h3`
-    font-size: 58pt;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    align-self: center;
-
-    @media (max-width: 1000px) {
-        font-size: 40pt;
-        margin-top: 25px;
-        margin-bottom: 15px;
-    }
-
-    @media (max-width: 800px) {
-        font-size: 36pt;
-    }
-
-    @media (max-width: 600px) {
-        font-size: 32pt;
-    }
-`
 export const GitLink = styled.a`
     display: flex;
     justify-content: center;

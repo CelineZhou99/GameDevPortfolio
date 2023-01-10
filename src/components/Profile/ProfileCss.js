@@ -94,15 +94,6 @@ export const StatsItemsContainer = styled.div`
     text-align: left;
 `;
 
-export const StatsLevel = styled.img`
-    width: 30%;
-    margin-left: 10px;
-
-    @media (max-width: 600px) {
-        width: 35%;
-    }
-`;
-
 // right container
 export const HobbiesContainer = styled.div`
     display: flex;

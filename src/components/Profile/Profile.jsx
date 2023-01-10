@@ -7,7 +7,6 @@ import {
 	Picture,
 	NameTag,
 	StatsItemsContainer,
-	StatsLevel,
 	HobbiesItem,
 } from "./ProfileCss";
 
@@ -20,8 +19,7 @@ function Profile() {
 			</PictureContainer>
 			<StatsContainer>
 				<StatsItemsContainer>
-					<p>Work Exp:</p>
-					<StatsLevel src="./LevelFour.svg" alt="level 4" />
+					<p>Work Exp (Software Engineer): 1 Full-time, 1 Part-time, 1 Internship</p>
 				</StatsItemsContainer>
 				<StatsItemsContainer>
 					<p>Type: Game Developer</p>
@@ -30,16 +28,12 @@ function Profile() {
 					<p>Weapon: Unreal Engine 5</p>
 				</StatsItemsContainer>
 				<StatsItemsContainer>
-					<p>Game Dev Exp:</p>
-					<StatsLevel src="./LevelFive.svg" alt="level 5" />
-				</StatsItemsContainer>
-				<StatsItemsContainer>
 					<p>Status: Looking for Work</p>
 				</StatsItemsContainer>
 			</StatsContainer>
 			<HobbiesContainer>
 				<HobbiesItemsContainer>
-					<HobbiesItem src="./Likes.svg" alt="Likes" />
+					<NameTag>Interests</NameTag>
 				</HobbiesItemsContainer>
 				<HobbiesItemsContainer>
 					<HobbiesItem src="./Cat.svg" alt="Cat" />
