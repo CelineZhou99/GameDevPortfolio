@@ -19,7 +19,10 @@ function Profile() {
 			</PictureContainer>
 			<StatsContainer>
 				<StatsItemsContainer>
-					<p>Work Exp (Software Engineer): 1 Full-time, 1 Part-time, 1 Internship</p>
+					<p>
+						Work Exp (Software Engineer): 1 Full-time (6 months), 1 Part-time (3 months), 1 Internship (4
+						months)
+					</p>
 				</StatsItemsContainer>
 				<StatsItemsContainer>
 					<p>Type: Game Developer</p>
