@@ -20,8 +20,7 @@ function Profile() {
 			<StatsContainer>
 				<StatsItemsContainer>
 					<p>
-						Work Exp (Software Engineer): 1 Full-time (6 months), 1 Part-time (3 months), 1 Internship (4
-						months)
+						Software Engineer Exp: 1 Full-time (6 months), 1 Part-time (3 months), 1 Internship (4 months)
 					</p>
 				</StatsItemsContainer>
 				<StatsItemsContainer>

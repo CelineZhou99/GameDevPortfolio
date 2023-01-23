@@ -1,7 +1,9 @@
+const MultiplayerDemo = "https://www.youtube.com/embed/6YZcX61a-98";
 const ShooterDemo = "https://www.youtube.com/embed/Ca3wOfvwKpA";
 const TankDemo = "https://www.youtube.com/embed/bl45NCqkt3U"
 const DungeonDemo = "https://www.youtube.com/embed/w6QSgaJhm4g"
 
+const MultiplayerDescription = "Enjoy playing with friends? This plugin will enable Multiplayer functionalities in any Unreal Project you create over a Steam connection. It handles everything down to Creating, Finding and Joining Online Sessions through a Menu structure. You can also see who comes and goes!";
 const ShooterDescription = "Emerce yourself in a Sci-Fi themed Third Person Shooter game packed with action and intense music. Hone your aiming skills and take down the enemies, but be aware - they will search and chase after you with all their might!"
 const TankDescription = "Control a mighty toon tank and challenge yourself to beat the many enemies wired to destroy you when you get too close. Warning: the battle will be so intense the ground will start shaking, so hold onto your hats!"
 const DungeonDescription = "Hop into the shoes of a professional thief and sneak into the gruesome dungeon and steal the golden statue. There will be many puzzles along the way to stop you in your tracks. But nothing's stopping that big brain of yours!"
@@ -9,6 +11,29 @@ const DungeonDescription = "Hop into the shoes of a professional thief and sneak
 export const UnrealProjects = [
 	{
 		isFlipped: false,
+		vidSrc: MultiplayerDemo,
+		title: "Online Multiplayer Session Plugin",
+		gitLink: "https://github.com/CelineZhou99/OnlineMultiplayerSessionPlugin", 
+		engine: "Unreal Engine 5",
+		description: MultiplayerDescription,
+		technicals: [
+			"Connecting to Steam using a Client-Server model where the hosting player is also the listen server",
+            "Accessing Steam's Online Subsystem and Interface functions to implement online multiplayer functionalities",
+            "Use of pre-existing and custom-written delegates to broadcast data to different parts of the system",
+            "Players can create an online multiplayer session with specified maximum players (default = 4) and game mode (default = Free for All)",
+            "Players can find online sessions with a specified game mode (default = Free for All)",
+            "Players can join sessions",
+            "Sessions are destroyed after the Player quits the session",
+            "Menu UI with a Host, Join and Quit button",
+            "Developers can customise number of public connections for each session, the game mode, and the path to the lobby level within the Level Blueprint",
+            "On-screen debug messages that display the Steam username of players that join and leave the lobby, how many players are in a lobby, and the success/fail state of sessions (e.g. 'Create session success')"
+		],
+		challenges: [
+			"Testing multiplayer was quite frustrating as I had to constantly package the game, upload it onto google drive and test on a separate machine. It was very time-consuming, but I found a better way to test the game without packaging it as often. I also used the waiting time as breaks to recharge"
+		]
+	},
+	{
+		isFlipped: true,
 		vidSrc: ShooterDemo, 
 		title: "Sci-Fi Shooter", 
 		gitLink: "https://github.com/CelineZhou99/SciFiShooter-UE5", 
@@ -37,7 +62,7 @@ export const UnrealProjects = [
 		]
 	},
 	{
-		isFlipped: true,
+		isFlipped: false,
 		vidSrc: TankDemo, 
 		title: "ToonTanks", 
 		gitLink: "https://github.com/CelineZhou99/Tanks-UE5", 
@@ -60,7 +85,7 @@ export const UnrealProjects = [
 		]
 	},
 	{
-		isFlipped: false,
+		isFlipped: true,
 		vidSrc: DungeonDemo, 
 		title: "Dungeon Raider", 
 		gitLink: "https://github.com/CelineZhou99/DungeonRaider-UE5", 

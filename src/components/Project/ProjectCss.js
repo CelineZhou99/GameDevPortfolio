@@ -54,6 +54,7 @@ export const TitleContainer = styled.div`
 
 export const TitleText = styled.h2`
     font-size: 24pt;
+    margin-top: 0;
 
     @media (max-width: 1000px) {
         font-size: 20pt;
@@ -95,6 +96,7 @@ export const GitLink = styled.a`
 
 export const GitIcon = styled.img`
     height: 45px;
+    cursor: Pointer;
 
     @media (max-width: 600px) {
         height: 40px;

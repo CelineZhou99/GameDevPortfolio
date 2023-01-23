@@ -8,7 +8,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 const ProjectAccordion = (props) => {
 	const { id, title, body } = props;
 	return (
-		<Accordion sx={{ width: "100%", marginBottom: "15px" }}>
+		<Accordion sx={{ width: "100%", marginBottom: "15px", cursor: "pointer" }}>
 			<AccordionSummary
 				expandIcon={<ExpandMoreIcon />}
 				aria-controls={id + " " + title}
