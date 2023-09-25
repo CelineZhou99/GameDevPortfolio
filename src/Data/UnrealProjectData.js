@@ -17,16 +17,14 @@ export const UnrealProjects = [
 		engine: "Unreal Engine 5",
 		description: MultiplayerDescription,
 		technicals: [
-			"Connecting to Steam using a Client-Server model where the hosting player is also the listen server",
-            "Accessing Steam's Online Subsystem and Interface functions to implement online multiplayer functionalities",
-            "Use of pre-existing and custom-written delegates to broadcast data to different parts of the system",
-            "Players can create an online multiplayer session with specified maximum players (default = 4) and game mode (default = Free for All)",
-            "Players can find online sessions with a specified game mode (default = Free for All)",
-            "Players can join sessions",
+			"Auto connection to Steam's Online Subsystem on launch",
+            "Client-Server model where the hosting player is the listen server",
+            "Online multiplayer functionalities coded using Session Interface functions, pre-existing and custom-written delegates",
+            "Players can host a session or find and join a session",
             "Sessions are destroyed after the Player quits the session",
-            "Menu UI with a Host, Join and Quit button",
-            "Developers can customise number of public connections for each session, the game mode, and the path to the lobby level within the Level Blueprint",
-            "On-screen debug messages that display the Steam username of players that join and leave the lobby, how many players are in a lobby, and the success/fail state of sessions (e.g. 'Create session success')"
+            "Menu UI with Host, Join and Quit buttons",
+            "Customisable features for developers: number of public connections for each session, the game mode, and the path to the lobby level within the Level Blueprint",
+            "On-screen messages displaying session data such as the username and number of players in a session"
 		],
 		challenges: [
 			"Testing multiplayer was quite frustrating as I had to constantly package the game, upload it onto google drive and test on a separate machine. It was very time-consuming, but I found a better way to test the game without packaging it as often. I also used the waiting time as breaks to recharge"
@@ -40,7 +38,7 @@ export const UnrealProjects = [
 		engine: "Unreal Engine 5", 
 		description: ShooterDescription,
 		technicals: [
-			"Controller supported",
+			"Controller support",
             "Character movement, aiming, shooting", 
             "Camera movement",
             "Intelligent enemy AI coded using behaviour tree, blackboard, custom tasks and services written in C++", 

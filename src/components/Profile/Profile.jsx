@@ -19,9 +19,7 @@ function Profile() {
 			</PictureContainer>
 			<StatsContainer>
 				<StatsItemsContainer>
-					<p>
-						Software Engineer Exp: 1 Full-time (6 months), 1 Part-time (3 months), 1 Internship (4 months)
-					</p>
+					<p>Game Developer Exp: 1 Full-time (April 2023 - Present)</p>
 				</StatsItemsContainer>
 				<StatsItemsContainer>
 					<p>Type: Game Developer</p>
@@ -30,7 +28,7 @@ function Profile() {
 					<p>Weapon: Unreal Engine 5</p>
 				</StatsItemsContainer>
 				<StatsItemsContainer>
-					<p>Status: Looking for Work</p>
+					<p>Status: Looking for experiences</p>
 				</StatsItemsContainer>
 			</StatsContainer>
 			<HobbiesContainer>

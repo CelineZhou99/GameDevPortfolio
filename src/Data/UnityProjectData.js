@@ -17,7 +17,7 @@ export const UnityProjects = [
             "Character movement, attacking, collecting coins", 
             "Camera movement",
             "Level design and building using the tilemap system",
-            "Interactable friendly NPCs that walk within their boundaries, talk to the player when interacted with", 
+            "Friendly NPCs that walk within their boundaries and interact with players via dialogue", 
             "Enemy AI will roam around the level in a random direction, damage players when coming in contact with them, become stronger as the game progresses, and have a chance of dropping a coin upon death",
             "Animations using blend tree and state machine",
             "Damage, health, level up system", 
