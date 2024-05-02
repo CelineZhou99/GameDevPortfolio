@@ -14,12 +14,12 @@ function Profile() {
 	return (
 		<Container>
 			<PictureContainer>
-				<Picture src="./Selfie.png" alt="profile picture" />
+				<Picture src="./pxArt.png" alt="profile picture" />
 				<NameTag>Celine Zhou</NameTag>
 			</PictureContainer>
 			<StatsContainer>
 				<StatsItemsContainer>
-					<p>Game Developer Exp: 1 Full-time (April 2023 - Present)</p>
+					<p>Game Developer Exp: 1 Full-time</p>
 				</StatsItemsContainer>
 				<StatsItemsContainer>
 					<p>Type: Game Developer</p>

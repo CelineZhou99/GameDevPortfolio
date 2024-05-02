@@ -7,6 +7,7 @@ function Header() {
 				<LinkText notLink>Celine Zhou</LinkText>
 				<RowChild>
 					<LinkText href="#Profile_ID">Profile</LinkText>
+					<LinkText href="#Cpp_ID">Pure C++</LinkText>
 					<LinkText href="#Unreal_ID">Unreal</LinkText>
 					<LinkText href="#Unity_ID">Unity</LinkText>
 					<LinkText href="#Contacts_ID">Contact</LinkText>
